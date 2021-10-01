@@ -1,0 +1,13 @@
+# Template: replace UUID
+
+# Root/home partitions
+UUID=2ae086dc-55ae-4056-b593-00abca01e419	/         	ext4      	rw,relatime,noatime,commit=90	0 1
+
+# /boot partition
+UUID=DBC5-1E24      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# Other drivers, remove commit option if not using the journal
+UUID=8294e50e-1203-44f5-9383-feb6b481c30f	/hdd		ext4		defaults,nofail,noatime,commit=90		0,3
+
+# Swap file:
+# /swapfile none swap defaults 0 0
