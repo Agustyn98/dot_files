@@ -5,7 +5,8 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-alias sensors.cpu="sensors | grep 'Package\|fan'"
+alias watchsensors="watch \"sensors | grep 'temp3\|edge:\|fan1'\""
+alias sensors.cpu="sensors | grep 'temp3\|fan1'"
 alias docker.stop="systemctl stop docker && systemctl stop docker.socket"
 alias py="python"
 alias watchcpu="watch cat /sys/devices/system/cpu/cpu[0-9]*/cpufreq/scaling_cur_freq"
