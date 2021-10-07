@@ -1,4 +1,8 @@
 {
+	"COMMENT":" Location: ~/.config/Code/User/settings.json"
+}
+
+{
     "editor.fontFamily": " 'Source Code Pro Medium','Hack'",
     "security.workspace.trust.emptyWindow": false,
     "security.workspace.trust.enabled": false,
