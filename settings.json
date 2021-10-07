@@ -1,0 +1,9 @@
+{
+    "editor.fontFamily": " 'Source Code Pro Medium','Hack'",
+    "security.workspace.trust.emptyWindow": false,
+    "security.workspace.trust.enabled": false,
+    "editor.fontSize": 15,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.minimap.enabled": false
+}

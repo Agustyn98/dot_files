@@ -1,2 +1,5 @@
 # kernel parameters for /etc/default/grub
 GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet acpi_enforce_resources=lax nowatchdog mitigations=off"
+
+# Hibernation parameters:
+# resume=UUID=14ccb935-f913-4186-ba34-2dcd5c3e5ae2 resume_offset=753664
