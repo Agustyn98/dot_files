@@ -5,6 +5,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias grep="grep -i --color=auto"
 alias watchsensors="watch \"sensors | grep 'temp3\|edge:\|fan1'\""
 alias sensors.cpu="sensors | grep 'temp3\|fan1\|edge:'"
 alias docker.stop="systemctl stop docker && systemctl stop docker.socket"
