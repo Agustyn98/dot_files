@@ -9,5 +9,9 @@
     "editor.fontSize": 15,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "material-icon-theme"
 }
