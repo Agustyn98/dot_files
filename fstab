@@ -14,5 +14,9 @@ UUID=4699933f-0aff-4ea8-b2c7-4eeaf78ff128	/home     	ext4      	rw,relatime,noat
 # hdd
 UUID=14ccb935-f913-4186-ba34-2dcd5c3e5ae2 /hdd ext4 defaults,nofail,noatime,commit=620  0,4
 
-Swapfile
+# Swapfile
 /hdd/swapfile none swap defaults 0 5
+
+# NTFS with native support (>5.15 kernel)
+UUID=1D62F699402AB2F7	/hdd     	ntfs3      	nofail	0 3
+
