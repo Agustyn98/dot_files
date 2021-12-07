@@ -1,5 +1,8 @@
 # Disable password prompt timeout
 Defaults passwd_timeout=0
 
+# Disable per-terminal password
+Defaults timestamp_type=global
+
 # Disable sudo password for certain commands
 agus dell-inspiron = NOPASSWD: /usr/bin/pacman -Syu,/usr/local/bin/cpu, /usr/bin/systemctl
