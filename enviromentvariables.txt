@@ -1,0 +1,2 @@
+# Firefox pinch and zoom
+MOZ_USE_XINPUT2=1 
