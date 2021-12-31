@@ -1,7 +1,12 @@
 # LOCATION: /etc/default/grub.cfg
 # remember to regenerate the grub config after making changes
 # kernel parameters for /etc/default/grub
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet acpi_enforce_resources=lax nowatchdog mitigations=off"
+GRUB_DEFAULT=saved
+GRUB_SAVEDEFAULT=true
+GRUB_TIMEOUT=0
+GRUB_DISTRIBUTOR="Arch"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet ISOL=0 hardened_usercopy=off  nmi
+_watchdog=0 nowatchdog mitigations=off resume=UUID=db560999-34da-47d3-b2b1-462
+c1d850e93 resume_offset=34816"
 
-# Hibernation parameters:
-# resume=UUID=14ccb935-f913-4186-ba34-2dcd5c3e5ae2 resume_offset=753664
+

@@ -1,0 +1,4 @@
+# power down unused devices,
+# if they don't turn back on, remove this rule
+SUBSYSTEM=="pci", ATTR{power/control}="auto"
+

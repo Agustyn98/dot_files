@@ -1,2 +1,13 @@
-# Firefox pinch and zoom
-MOZ_USE_XINPUT2=1 
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+
+#pinch to zoom in firefox
+MOZ_USE_XINPUT2=1
+#use all cores when compiling
+MAKEFLAGS=-j8
+#set GTK 3 and 4 theme
+GTK_THEME=Adwaita:dark
+
