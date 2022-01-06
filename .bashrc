@@ -13,7 +13,9 @@ alias watchcpu="watch cat /sys/devices/system/cpu/cpu[0-9]*/cpufreq/scaling_cur_
 alias du.1="du --max-depth 1 -h"
 alias docker.start="sudo systemctl start docker"
 alias docker.stop="sudo systemctl stop docker.socket;sudo systemctl stop docker.service"
-alias bluetooth="sudo systemctl start bluetooth"
+alias bluetooth.start="sudo systemctl start bluetooth"
+alias bluetooth.stop="sudo systemctl stop bluetooth"
+alias sudo="doas"
 
 
 PS1="\[\e[36m\]\u\[\e[m\] \[\e[35m\]\W\[\e[m\] \\$ "
