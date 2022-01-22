@@ -1,0 +1,22 @@
+# path: /etc/enviroment
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+#
+
+#pinch to zoom
+MOZ_ENABLE_WAYLAND=1
+MOZ_USE_XINPUT2=1
+
+#set GTK 3 and 4 theme
+GTK_THEME=Adwaita:dark
+
+CFLAGS="-march=native"
+CXXFLAGS="${CFLAGS}"
+
+JAVA_HOME="/usr/lib/jvm/java-11-openjdk/"
+
+# ANGLE hardware video acceleration
+LIBVA_DRIVER_NAME=iHD
+

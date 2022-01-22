@@ -15,7 +15,12 @@ alias docker.start="sudo systemctl start docker"
 alias docker.stop="sudo systemctl stop docker.socket;sudo systemctl stop docker.service"
 alias bluetooth.start="sudo systemctl start bluetooth"
 alias bluetooth.stop="sudo systemctl stop bluetooth"
-alias sudo="doas"
+#alias sudo="doas"
+alias hibernate="sudo systemctl hibernate"
+alias suspend="sudo systemctl suspend"
+alias monitor.mirror="xrandr --output DP-1 --auto --same-as eDP-1"
+alias monitor.right="xrandr --output DP-1 --auto --right-of eDP-1"
+alias gpu="sudo intel_gpu_top"
 
 
 PS1="\[\e[36m\]\u\[\e[m\] \[\e[35m\]\W\[\e[m\] \\$ "

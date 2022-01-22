@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# Dependencies: yad, ??
 BAR_HEIGHT=16  # polybar height
 BORDER_SIZE=2  # border size from your wm settings
 YAD_WIDTH=222  # 222 is minimum possible value
