@@ -1,6 +1,6 @@
-{
-	"COMMENT":" Location: ~/.config/Code/User/settings.json"
-}
+
+	Location: ~/.config/Code/User/settings.json
+
 
 {
     "editor.fontFamily": " 'Source Code Pro Medium','Hack'",

@@ -20,9 +20,11 @@ alias hibernate="sudo systemctl hibernate"
 alias suspend="sudo systemctl suspend"
 alias monitor.mirror="xrandr --output DP-1 --auto --same-as eDP-1"
 alias monitor.right="xrandr --output DP-1 --auto --right-of eDP-1"
+alias monitor.left="xrandr --output DP-1 --auto --left -of eDP-1"
 alias gpu="sudo intel_gpu_top"
-
+alias mount="mount -o gid=users,fmask=113,dmask=002"
 
 PS1="\[\e[36m\]\u\[\e[m\] \[\e[35m\]\W\[\e[m\] \\$ "
+#PS1="\[\e[36m\]si\e[m\] \[\e[35m\]\W\[\e[m\] \\$ "
 
 export LC_ALL=en_US.UTF-8
