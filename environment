@@ -11,6 +11,7 @@ MOZ_USE_XINPUT2=1
 
 #set GTK 3 and 4 theme
 GTK_THEME=Adwaita:dark
+QT_STYLE_OVERRIDE=adwaita:dark
 
 CFLAGS="-march=native"
 CXXFLAGS="${CFLAGS}"
