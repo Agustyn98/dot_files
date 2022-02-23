@@ -26,6 +26,10 @@ alias rm="rm -i"
 alias hdd="sudo smartctl -i -n standby /dev/sda1"
 alias wifi.off="nmcli radio wifi off"
 alias wifi.on="nmcli radio wifi on"
+alias free="free --mega"
+alias mpvyt="mpv --ytdl-format='bestvideo[height<=1090]+bestaudio/best'"
+# Example : ffmpeg -i video.mp4 -ss 00:09:35 -to 00:12:08 -c copy ~/output.mp4
+function cut_video() { ffmpeg -i $1 -ss $2 -to $3 -c copy ~/cut_video.mp4; }
 
 PS1="\[\e[36m\]\u\[\e[m\] \[\e[35m\]\W\[\e[m\] \\$ "
 #PS1="\[\e[36m\]si\e[m\] \[\e[35m\]\W\[\e[m\] \\$ "
