@@ -1,3 +1,6 @@
+intel graphics options 
+goes in ~/
+
 <driconf>
   <device screen="0" driver="iris">
     <application name="Default">

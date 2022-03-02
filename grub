@@ -5,6 +5,6 @@ GRUB_DEFAULT=saved
 GRUB_SAVEDEFAULT=true
 GRUB_TIMEOUT=0
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nouveau.noaccel=1 nmi_watchdog=0 nowatchdog mitigations=off resume=UUID=db560999-34da-47d3-b2b1-462c1d850e93 resume_offset=34816"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nouveau.noaccel=1 nmi_watchdog=0 nowatchdog mitigations=off resume=UUID=db560999-34da-47d3-b2b1-462c1d850e93 resume_offset=34816 mem_sleep_default=deep audit=0"
 
 
