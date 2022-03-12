@@ -3,22 +3,16 @@
 
 # <file system> <dir> <type> <options> <dump> <pass>
 # /dev/nvme0n1p2
-UUID=bf11318c-97c6-40fb-9074-9cfc93a5dbfb	/         	ext4      	rw,relatime,noatime,commit=120,barrier=0	0 1
+UUID=87a703b7-8919-454f-a7e5-bff1e59500b0	/         	ext4      	rw,noatime,commit=580,barrier=0	0 1
 
 # /dev/nvme0n1p1
-UUID=8C49-547F      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro,noatime	0 2
+UUID=4B9E-EFFD      	/boot     	vfat      	rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
 
 # /dev/nvme0n1p3
-UUID=3ecbef02-886c-4a9e-b692-613c499a8783	/home     	ext4      	rw,relatime,noatime,commit=180,barrier=0	0 2
+UUID=fecbb239-923b-40e6-961c-979464bedef9	/home     	ext4      	rw,noatime,commit=680,barrier=0	0 2
 
+# /dev/nvme1n1
+UUID=46513608-55e6-4975-80c3-3e76cefb0e15	none      	swap      	defaults  	0 0
 
 # hdd
-UUID=1D62F699402AB2F7	/hdd     	ntfs3      	nofail,noatime	0 5 
-
-# optane
-UUID=db560999-34da-47d3-b2b1-462c1d850e93 /optane ext4 defaults,nofail,noatime,commit=9620,barrier=0  0,3
-
-
-# swapfile
-/optane/swapfile none swap defaults 0 4
-
+UUID=c870d843-b31a-4c6c-a212-7b7ff05e37b5 /hdd ext4 rw,nofail,noatime,commit=15500,barrier=0		0 5

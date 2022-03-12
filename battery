@@ -1,0 +1,11 @@
+#!/usr/bin/python
+
+import subprocess
+import sys
+
+if sys.argv[1] == 'power':
+    subprocess.call("cpu 1; sleep 0.3; undervolt 200 84 107 107 5", shell=True)
+elif sys.argv[1] == 'normal':
+    subprocess.call("cpu 2; sleep 0.3; undervolt 200 75 107 107 5", shell=True)
+elif sys.argv[1] == 'performance':
+    subprocess.call("cpu 3; sleep 0.3; undervolt  110 11 102 102 5", shell=True)
