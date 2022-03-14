@@ -4,8 +4,8 @@ import subprocess
 import sys
 
 if sys.argv[1] == 'power':
-    subprocess.call("cpu 1; sleep 0.2; undervolt 220 87 106 106 45", shell=True)
+    subprocess.call("cpu 1; sleep 0.1; undervolt 250 82 105 105 45", shell=True)
 elif sys.argv[1] == 'normal':
-    subprocess.call("cpu 3; sleep 0.2; undervolt 220 72 104 104 6", shell=True)
+    subprocess.call("cpu 3; sleep 0.1; undervolt 250 72 103 103 6", shell=True)
 elif sys.argv[1] == 'performance':
-    subprocess.call("cpu 3; sleep 0.2; undervolt  25 5 91 91 5", shell=True)
+    subprocess.call("cpu 3; sleep 0.1; undervolt  25 5 91 91 5", shell=True)

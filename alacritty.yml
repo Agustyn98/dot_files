@@ -16,7 +16,7 @@ font:
     family: Source Code Pro
     style: Bold Italic
 
-  size: 12
+  size: 11
 
 
 
@@ -82,31 +82,36 @@ schemes:
 breeze: &breeze
   # Default colors
   primary:
-    background: '0x232627'
-    foreground: '0xfcfcfc'
+    background: '0x252525'
+    #background: '0x000000'
+    #background: '0x232627'
+    #foreground: '0xfcfcfc'
+    foreground: '0xffffff'
 
-    dim_foreground: '0xeff0f1'
+    #dim_foreground: '0xeff0f1'
+    dim_foreground: '0xffffff'
     bright_foreground: '0xffffff'
     dim_background: '0x31363b'
     bright_background: '0x000000'
 
   # Normal colors
   normal:
-    black: '0x232627'
+    black: '0x000000'
+    #black: '0x414141'
     red: '0xed1515'
     green: '0x11d116'
-    yellow: '0xf67400'
+    yellow: '0xf1fa8c'
     blue: '0x1d99f3'
     magenta: '0x9b59b6'
     cyan: '0x1abc9c'
-    white: '0xfcfcfc'
+    white: '0xffffff'
 
   # Bright colors
   bright:
     black: '0x7f8c8d'
     red: '0xc0392b'
     green: '0x1cdc9a'
-    yellow: '0xfdbc4b'
+    yellow: '0xf4f99d'
     blue: '0x3daee9'
     magenta: '0x8e44ad'
     cyan: '0x16a085'
@@ -117,11 +122,11 @@ breeze: &breeze
     black: '0x31363b'
     red: '0x783228'
     green: '0x17a262'
-    yellow: '0xb65619'
+    yellow: '0xebf85b'
     blue: '0x1b668f'
     magenta: '0x614a73'
     cyan: '0x186c60'
-    white: '0x63686d'
+    white: '0xffffff'
   
 
 # From the famous Cobalt2 sublime theme
@@ -129,7 +134,8 @@ breeze: &breeze
 cobalt: &cobalt
   # Default colors
   primary:
-    background: '0x122637'
+    #background: '0x122637'
+    background: '0x252525'
     foreground: '0xffffff'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
@@ -143,10 +149,10 @@ cobalt: &cobalt
     red:     '0xff0000'
     green:   '0x37dd21'
     yellow:  '0xfee409'
-    blue:    '0x1460d2'
+    blue:    '0x3daee9'
     magenta: '0xff005d'
     cyan:    '0x00bbbb'
-    white:   '0xbbbbbb'
+    white:   '0xdddddd'
 
   # Bright colors
   bright:
@@ -222,12 +228,12 @@ colors: *breeze
 
 window:
   dimensions:
-    columns: 110
+    columns: 120
     lines: 35
 
   padding:
-    x: 7
-    y: 5
+    x: 3 
+    y: 3
 
 scrolling:
-  history: 5000
+  history: 6000
