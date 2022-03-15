@@ -41,8 +41,8 @@ alias watchcpu="watch cat /sys/devices/system/cpu/cpu[0-9]*/cpufreq/scaling_cur_
 alias du.1="du --max-depth 1 -h"
 alias docker.start="sudo systemctl start docker"
 alias docker.stop="sudo systemctl stop docker.socket;sudo systemctl stop docker.service"
-alias bluetooth.start="sudo systemctl start bluetooth"
-alias bluetooth.stop="sudo systemctl stop bluetooth"
+alias bluetooth.start="rfkill unblock bluetooth; sudo systemctl start bluetooth"
+alias bluetooth.stop="rfkill block bluetooth; sudo systemctl stop bluetooth"
 alias hibernate="sudo systemctl hibernate"
 alias suspend="sudo systemctl suspend"
 alias monitor.mirror="xrandr --output DP-1 --auto --same-as eDP-1"
@@ -61,6 +61,3 @@ alias voltage="sudo intel-undervolt measure -s 0.5"
 function mount_usb() { sudo mount -o umask=0 $1 $2; }
 
 
-if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
-	  exec startx
-fi
